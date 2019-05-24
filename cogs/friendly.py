@@ -15,7 +15,7 @@ class Friendly_commands(commands.Cog, name='Friendly Stuff'):
     async def on_member_join(self, member):
         channel = member.guild.system_channel
         if channel is not None:
-            await channel.send('Hello, {0.mention}.'.format(member))
+            await channel.send("Welcome to the server, {0.mention}! If you haven't already, please go read #info . ".format(member))
 
     @commands.command()
     async def hello(self, ctx, *, member: discord.Member = None):

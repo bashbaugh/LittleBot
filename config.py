@@ -1,6 +1,6 @@
 import secret
 
-from cogs import friendly, util, fun
+from cogs import friendly, util, fun, macros
 
 APP_TOKEN = secret.TOKEN
 GOOGLE_CUSTOM_SEARCH_ID = secret.GOOGLE_CUSTOM_SEARCH_ID
@@ -13,20 +13,15 @@ COMMAND_COGS = [
         'class': util.Util_commands
     }, {
         'class': fun.Fun
+    }, {
+        'class': macros.Macros
     }
     ]
 
 BOT_ACTIVITIES = [
-    "Hacking your computer",
-    "Buying your data",
-    "arguing with james",
-    "fighting a battle",
-    "Tracking your activities",
     "IM A BOT",
-    "fuck you",
     "Nothing",
     "Ruining your life",
-    "fortnite sucks",
     "analyzing your life",
     "yeet, yeet yeet"
     ]
@@ -43,6 +38,11 @@ HOW_ARE_YOU_RESPONSES = [
     ]
 
 DEFAULT_MEME_TYPE = 'google'
-GOOGLE_MEME_SEARCH_QUERIES = ['programmer+humor', 'programming+memes', 'programming+meme', 'coding+meme']
+#GOOGLE_MEME_SEARCH_QUERIES = ['programmer+humor', 'programming+memes', 'programming+meme', 'coding+meme']
 
-BOT_ADMIN_ROLES = ['Admin', 'admin', 'bot-admin', 'Bot-admin', 'Jimbo-admin']
+BOT_ADMIN_ROLES = ['Admin', 'admin', 'bot-admin', 'Bot-admin',] 
+
+ALLOWED_SPAM_CHANNELS = ['bot-spam']
+
+COMMAND_PREFIX = '--'
+MACRO_PREFIX = '++'

@@ -1,7 +1,5 @@
-# Jimbo Discord Bot
+# LittleBot Discord Bot
 # Written by Benjamin Ashbaugh and contributors
-# https://github.com/scitronboy/Jimbo
-# Licensed under the MIT license.
 
 import random
 from time import sleep
@@ -25,7 +23,7 @@ shandler.setFormatter(formatter)
 logger.addHandler(fhandler)
 logger.addHandler(shandler)
 
-bot = commands.Bot(command_prefix='--')
+bot = commands.Bot(command_prefix=cfg.COMMAND_PREFIX)
 
 @bot.event
 async def on_ready():
